@@ -7,6 +7,7 @@ public class MainClass {
 		FourNum f = new FourNum();
 		int a = 800, b = 200, c = 300, d = 400, e = 500;
 		ThirdNum thi = new ThirdNum();
+		TestClass t = new TestClass();
 		Scanner sc = new Scanner(System.in);
 		System.out.print("최초 금액을 입력해주세요. : ");
 		int firMo = sc.nextInt();
@@ -20,12 +21,14 @@ public class MainClass {
 			System.out.print(">>> : ");
 			int num = sc.nextInt();
 			switch(num) {
-				case 1: break;
+				case 1: 
+					t.display(a, b, c, d, e);
+					break;
 				case 2: 
 					list_del del = new list_del();
 					break;
 				case 3: 
-					thi.payMon();
+					thi.payMon(a,b,c,d,e,firMo);
 					mon = firMo - thi.sum;
 					System.out.println("남은 금액 : "+mon);
 					break;

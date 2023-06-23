@@ -3,9 +3,7 @@ package testtest;
 import java.util.Scanner;
 
 public class list_del {
-	
 	Scanner sc = new Scanner(System.in);
-
 	public list_del() {
 		
 		TestDTO dto = new TestDTO();
