@@ -17,7 +17,9 @@ public class MainClass {
 			int num = sc.nextInt();
 			switch(num) {
 				case 1: break;
-				case 2: break;
+				case 2: 
+					list_del del = new list_del();
+					break;
 				case 3: break;
 				case 4: break;
 			}
