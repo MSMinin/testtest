@@ -7,6 +7,7 @@ public class MainClass {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("최초 금액을 입력해주세요. : ");
 		int firMo = sc.nextInt();
+		int a = 800, b = 200, c = 300, d = 400, e = 500;
 		
 		while(true) {
 			System.out.println("1. 목록 확인 및 장바구니 담기");
