@@ -3,12 +3,9 @@ package testtest;
 import java.util.Scanner;
 
 public class list_del {
-	
-	Scanner sc = new Scanner(System.in);
 
-	public list_del() {
-		
-		TestDTO dto = new TestDTO();
+	Scanner sc = new Scanner(System.in);
+	public void list_mod(TestDTO dto) {
 		
 		while (true) {
 			System.out.println("장바구니 목록");
@@ -59,7 +56,7 @@ public class list_del {
 			
 			if (dto_num < del) {
 				System.out.println("삭제 갯수초과");
-				return 0;
+				return dto_num;
 			}else {
 				int mod = dto_num - del;	
 				System.out.println(mod+ "개로 변경되었습니다");

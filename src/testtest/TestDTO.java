@@ -1,7 +1,7 @@
 package testtest;
 
 public class TestDTO {
-	private int a, b, c, d, e; // 순서대로 휴지, 물, 라면, 세제, 수건
+	public int a, b, c, d, e; // 순서대로 휴지, 물, 라면, 세제, 수건
 
 	public int getA() { return a; }
 

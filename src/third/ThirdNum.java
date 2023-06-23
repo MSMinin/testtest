@@ -4,9 +4,7 @@ import testtest.TestDTO;
 
 public class ThirdNum {
 	public int sum;
-	public void payMon() {
-		TestDTO dto = new TestDTO();
-		int a = 800, b = 200, c = 300, d = 400, e = 500;
+	public void payMon(int a , int b, int c, int d, int e, TestDTO dto) {
 		
 		if(dto.getA()==0 && dto.getB()==0 && dto.getC()==0 && dto.getD()==0 && dto.getE()==0) {
 			System.out.println("결제할 상품이 없습니다");
