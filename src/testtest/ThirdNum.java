@@ -1,6 +1,4 @@
-package third;
-
-import testtest.TestDTO;
+package testtest;
 
 public class ThirdNum {
 	public int sum;

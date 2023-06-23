@@ -2,16 +2,11 @@ package testtest;
 
 import java.util.Scanner;
 
-import third.ThirdNum;
-
 public class MainClass {
 	public static void main(String[] args) {
-<<<<<<< HEAD
 		FourNum f = new FourNum();
 		int a = 800, b = 200, c = 300, d = 400, e = 500;
-=======
 		ThirdNum thi = new ThirdNum();
->>>>>>> 8dd9efbc4c5560997c2ce3de1db755c3a7f769c7
 		Scanner sc = new Scanner(System.in);
 		System.out.print("최초 금액을 입력해주세요. : ");
 		int firMo = sc.nextInt();
@@ -29,22 +24,17 @@ public class MainClass {
 				case 2: 
 					list_del del = new list_del();
 					break;
-<<<<<<< HEAD
-				case 3: break;
+				case 3: 
+					thi.payMon();
+					mon = firMo - thi.sum;
+					System.out.println("남은 금액 : "+mon);
+					break;
 				case 4:
 					f.LastPrint(a, b, c, d, e, firMo);	
 					break;
 				default :
 					System.out.println("다시 입력해주세요.");
 					break;
-=======
-				case 3: 
-					thi.payMon();
-					mon = firMo - thi.sum;
-					System.out.println("남은 금액 : "+mon);
-					break;
-				case 4: break;
->>>>>>> 8dd9efbc4c5560997c2ce3de1db755c3a7f769c7
 			}
 		}
 	}

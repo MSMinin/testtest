@@ -14,7 +14,7 @@ public class FourNum {
 		System.out.println("라면은 총 " + dto.getC() + "개 구매하여 " + dto.getC() * c + "원이 나왔습니다.");
 		System.out.println("세제는 총 " + dto.getD() + "개 구매하여 " + dto.getD() * d + "원이 나왔습니다.");
 		System.out.println("수건은 총 " + dto.getE() + "개 구매하여 " + dto.getE() * e + "원이 나왔습니다. ");
-		System.out.println("최초 금액은 " + s + "원이였고 잔액은 " + (s - sum) + " 원 남았습니다.");
+		System.out.println("최초 금액은 " + s + "원이였고 잔액은 " + (s - sum) + "원 남았습니다.");
 		
 		System.exit(0);
 	}
