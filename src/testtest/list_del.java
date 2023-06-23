@@ -45,17 +45,17 @@ public class list_del {
 			}
 		}
 	}
-			
+
 	public int mod_list(int dto_num) {
 		if (dto_num == 0) {
 			System.out.println("담겨있지 않은 상품");
 			return 0;
 		}else {
-			System.out.println("변경할 갯수");
+			System.out.print("삭제 할 갯수");
 			int del = sc.nextInt();
 			
 			if (dto_num < del) {
-				System.out.println("삭제 갯수초과");
+				System.out.println("삭제 갯수 초과");
 				return dto_num;
 			}else {
 				int mod = dto_num - del;	
@@ -64,5 +64,4 @@ public class list_del {
 			}
 		}
 	}
-	
 }

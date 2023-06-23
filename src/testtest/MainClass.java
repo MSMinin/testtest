@@ -2,12 +2,9 @@ package testtest;
 
 import java.util.Scanner;
 
-import third.ThirdNum;
-
 public class MainClass {
 	
 	public static void main(String[] args) {
-		
 		Scanner sc = new Scanner(System.in);
 		
 		TestDTO dto = new TestDTO();
@@ -32,7 +29,7 @@ public class MainClass {
 					TestClass test = new TestClass();
 					test.display(a,b,c,d,e, dto);
 					break;
-				
+
 				case 2: 
 					list_del del = new list_del();
 					del.list_mod(dto);
@@ -40,12 +37,15 @@ public class MainClass {
 				
 				case 3: 
 					ThirdNum thi = new ThirdNum();
-					thi.payMon(a,b,c,d,e, dto);
-					mon = firMo - thi.sum;
-					System.out.println("남은 금액 : "+mon);
+					thi.payMon(a,b,c,d,e,firMo, dto);
 					break;
 				
-				case 4: 
+				case 4:
+					FourNum f = new FourNum();
+					f.LastPrint(a, b, c, d, e, firMo, dto);	
+					break;
+				default :
+					System.out.println("다시 입력해주세요.");
 					break;
 			}
 		}
